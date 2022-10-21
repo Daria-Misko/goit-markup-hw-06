@@ -526,6 +526,36 @@
 						<use class="modal-esc-symbol" href="./images/icons/icomoon1/symbol-defs.svg#icon-cross"></use>
 					</svg>
 				</button>
+				<form class="modal-form" name="user-form">
+					<h2>Залиште свої дані, ми вам передзвонимо</h2>
+					<div class="modal-field">
+						<label for="user-name" class="modal-label">Ім'я</label>
+						<input type="text" class="modal-input" name="name" id="user-name"/>
+					</div>
+
+					<div class="modal-field">
+						<label for="user-tel" class="modal-label">Телефон</label>
+						<input type="tel" class="modal-input" name="tel" id="user-tel"/>
+					</div>
+
+					<div class="modal-field">
+						<label for="user-email" class="modal-label">Пошта</label>
+						<input type="email" class="modal-input" name="email" id="user-email"/>
+					</div>
+
+					<div class="modal-field">
+						<label for="user-comment" class="modal-label">Коментар</label>
+						<textarea class="modal-input modal-comment" name="commet" id="user-comment" placeholder="Введіть текст" ></textarea>
+					</div>
+
+					<div class="checkbox-wrapper">
+						<input type="checkbox" name="modal-accept-input" id="modal-check" class="check-input visually-hidden" value="true">
+	
+						<label for="modal-check" class="check-label">Погоджуюся з розсилкою та приймаю <a href="#">Умови договору</a></label>
+					</div>
+
+					<button type="submit" class="modal-submit-button">Відправити</button>
+				</form>
 			</div>
 		</div>
 		<script src="./js/modal.js"></script>
