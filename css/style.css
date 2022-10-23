@@ -783,8 +783,13 @@ footer {
 	align-items: center;
 	justify-content: center;
 }
+.modal-button:hover .modal-esc-symbol,
+.modal-button:focus .modal-esc-symbol{
+	fill: var(--color-blue);
+}
 .modal-esc-symbol {
 	fill: var(--color-black);
+	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-form {
 }
@@ -871,6 +876,7 @@ footer {
 .check-input:checked + .check-label::before {
 	background-image: url(../images/icons/Vector.svg);
 	background-size: cover;
+	background-position: center;
 	background-color: var(--color-blue);
 	border-color: var(--color-blue);
 }
@@ -878,6 +884,7 @@ footer {
 .modal-input:focus + .input-icon {
 	fill: var(--color-blue);
 }
+
 .modal-input:focus {
 	border-color: var(--color-blue);
 }
